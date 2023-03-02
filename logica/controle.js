@@ -1,8 +1,8 @@
 async function testeApi() {
-    const conexao = await fetch("http://localhost:3000/agenda")
+    const conexao = await fetch("./controle.json")
 
     const conexaoConvertida = await conexao.json()
-    console.log(conexaoConvertida[0].dia)
+    console.log(conexaoConvertida.agenda[0].voga)
 }
 
 testeApi()
