@@ -1,0 +1,22 @@
+{
+  "name": "testedeapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TacioSoares/testedeapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TacioSoares/testedeapi/issues"
+  },
+  "homepage": "https://github.com/TacioSoares/testedeapi#readme",
+  "dependencies": {
+    "json-server": "^0.17.2"
+  }
+}
