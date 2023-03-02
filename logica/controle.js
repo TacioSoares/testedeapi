@@ -1,3 +1,10 @@
+var input = document.querySelector('#militar')
+var botao = document.querySelector('#botao')
+
+botao.addEventListener("click", async function(){
+    await criaVoga(input.value)
+})
+
 async function testeApi() {
     const conexao = await fetch("./controle.json")
 
@@ -6,3 +13,18 @@ async function testeApi() {
 }
 
 testeApi()
+
+async function criaVoga(militar) {
+    const conexao = await fetch("./controle.json",{
+        method: "POST",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            voga: militar
+        })
+    })
+    const conexaoConvertida = await conexao.json()
+    return conosole.log(conexaoConvertida)
+}
+
