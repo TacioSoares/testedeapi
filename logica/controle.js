@@ -15,12 +15,13 @@ async function testeApi() {
 testeApi()
 
 async function criaVoga(militar) {
-    const conexao = await fetch("./controle.json",{
+    const conexao = await fetch("http://localhost:3000/agenda",{
         method: "POST",
         headers: {
             "Content-type": "application/json"
         },
         body: JSON.stringify({
+            dia: 3,
             voga: militar
         })
     })
